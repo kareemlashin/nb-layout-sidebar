@@ -1,0 +1,58 @@
+@media(min-width:100px)and(max-width:767px) {
+    [dir="rtl"] {
+        .nb-theme-default {
+            nb-layout-header {
+                .fixed {
+                    ~ {
+                        .layout-container {
+                            nb-sidebar {
+                                .main-container {
+                                    right: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fixed[_nghost-ccs-c143] {
+            right: 0 !important;
+        }
+        .nb-theme-default nb-layout .layout .layout-container nb-sidebar.fixed,
+        .nb-theme-default nb-layout .layout .layout-container nb-sidebar .main-container-fixed {
+            right: 0 !important;
+        }
+        .menu-sidebar {
+            left: 32% !important;
+            background-color: red;
+        }
+    }
+}
+
+@media(min-width:767px)and(max-width:769px) {
+    [dir="rtl"] {
+        .menu-sidebar {
+            left: 0% !important;
+            background-color: red;
+        }
+        .collapsed {
+            width: 0 !important;
+        }
+        .compacted {
+            width: 0 !important;
+        }
+        .expanded {
+            left: 67% !important;
+            width: 16rem !important;
+        }
+    }
+}
+
+//nebular
+[dir="rtl"] {
+    .menu-sidebar .fixed,
+    .start,
+    .expanded {
+        right: 0 !important;
+    }
+}

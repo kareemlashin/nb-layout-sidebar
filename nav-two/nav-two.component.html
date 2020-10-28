@@ -1,0 +1,40 @@
+<div [dir]="dir">
+
+    <nb-layout>
+
+        <nb-layout-header fixed>
+            <nb-icon (click)="toggleSidebar()" class="sidebar-toggle" icon="menu-2-outline"></nb-icon>
+            <div class="mx-3">themes one</div>
+            <button (click)="dirChange()">change</button>
+        </nb-layout-header>
+
+        <nb-sidebar class="menu-sidebar " responsive start>
+            <nb-menu [items]="items"></nb-menu>
+
+        </nb-sidebar>
+
+        <nb-layout-column>
+            <ng-content></ng-content>
+            <div>
+                1
+            </div>
+
+            <div>
+                1
+            </div>
+
+            <div>
+                1
+            </div>
+
+            <div>
+                1
+            </div>
+        </nb-layout-column>
+
+        <nb-layout-footer fixed>
+            This is the footer
+        </nb-layout-footer>
+
+    </nb-layout>
+</div>
